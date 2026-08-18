@@ -1,381 +1,829 @@
-<!doctype html><html lang=en dir=auto>
-<head><meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=robots content="index, follow">
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
 <title>Helicopter Gunship DEX | Game Vibe</title>
-<meta name=keywords content="Indie,Simulation,Action">
-<meta name=description content="Game Description Helicopter Gunship DEX offers the experience of piloting combat helicopters. Players take control of rotorcraft, navigating and using weapons during combat encounters. This project contains elements of simulation games from the nineties, adapted for modern platforms. A key feature is the direct control of guidance systems, including containers and radar, while piloting the aircraft during mission execution.
-A special algorithm procedurally creates missions, offering different goals and tactical conditions.">
-<meta name=author content="Seiri">
-<link rel=canonical href=https://game-vibe.github.io/posts/helicopter-gunship-dex/>
-<meta name=yandex-verification content="b99c9362143ec86b">
-<link rel=stylesheet href=/assets/css/common/main.css>
-<link rel=stylesheet href=/assets/css/includes.css>
-<link rel=stylesheet href=/assets/css/includes/cookieconsent.css>
-<script src=/assets/js/cookieconsent.js></script>
-<script type=module src=/assets/js/cookieconsent-config.js></script>
-<script type=text/javascript src=https://cdn.tailwindcss.com></script>
-<link rel=icon href=https://game-vibe.github.io/favicon.ico>
-<link rel=apple-touch-icon href=https://game-vibe.github.io/apple-touch-icon.png>
-<meta name=theme-color content="#111828">
-<meta name=msapplication-TileColor content="#111828">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4988552421895566" crossorigin=anonymous></script>
+<meta name="keywords" content="Indie, Simulation, Action">
+<meta name="description" content='Game Description Helicopter Gunship DEX offers the experience of piloting combat helicopters. Players take control of rotorcraft, navigating and using weapons during combat encounters. This project contains elements of simulation games from the nineties, adapted for modern platforms. A key feature is the direct control of guidance systems, including containers and radar, while piloting the aircraft during mission execution.
+A special algorithm procedurally creates missions, offering different goals and tactical conditions.'>
+<meta name="author" content='Seiri'>
+<link rel="canonical" href='https://game-vibe.github.io/posts/helicopter-gunship-dex/'>
+<meta name="yandex-verification" content="b99c9362143ec86b">
+<link rel="stylesheet" href="/assets/css/common/main.css">
+<link rel="stylesheet" href="/assets/css/includes.css">
+<link rel="stylesheet" href="/assets/css/includes/cookieconsent.css">
+<script src="/assets/js/cookieconsent.js"></script>
+<script type="module" src="/assets/js/cookieconsent-config.js"></script>
+<script type="text/javascript" src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" href='https://game-vibe.github.io/favicon.ico'>
+<link rel="apple-touch-icon" href='https://game-vibe.github.io/apple-touch-icon.png'>
+<meta name="theme-color" content='#111828'>
+<meta name="msapplication-TileColor" content='#111828'>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4988552421895566"
+     crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J3ZLQ4H9X8"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-J3ZLQ4H9X8',{anonymize_ip:!1})}</script>
-<script type=text/javascript>gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'})</script><meta property="og:title" content="Helicopter Gunship DEX">
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-J3ZLQ4H9X8', { 'anonymize_ip': false });
+}
+</script>
+
+<script type="text/javascript">
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied'
+});
+</script><meta property="og:title" content="Helicopter Gunship DEX" />
 <meta property="og:description" content="Game Description Helicopter Gunship DEX offers the experience of piloting combat helicopters. Players take control of rotorcraft, navigating and using weapons during combat encounters. This project contains elements of simulation games from the nineties, adapted for modern platforms. A key feature is the direct control of guidance systems, including containers and radar, while piloting the aircraft during mission execution.
-A special algorithm procedurally creates missions, offering different goals and tactical conditions.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://game-vibe.github.io/posts/helicopter-gunship-dex/"><meta property="og:image" content="https://game-vibe.github.io/posts/helicopter-gunship-dex/images/helicopter-gunship-dex.jpg"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2022-12-01T00:00:00+00:00">
-<meta property="article:modified_time" content="2022-12-01T00:00:00+00:00">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://game-vibe.github.io/posts/helicopter-gunship-dex/images/helicopter-gunship-dex.jpg">
-<meta name=twitter:title content="Helicopter Gunship DEX">
-<meta name=twitter:description content="Game Description Helicopter Gunship DEX offers the experience of piloting combat helicopters. Players take control of rotorcraft, navigating and using weapons during combat encounters. This project contains elements of simulation games from the nineties, adapted for modern platforms. A key feature is the direct control of guidance systems, including containers and radar, while piloting the aircraft during mission execution.
-A special algorithm procedurally creates missions, offering different goals and tactical conditions.">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://game-vibe.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Helicopter Gunship DEX","item":"https://game-vibe.github.io/posts/helicopter-gunship-dex/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Helicopter Gunship DEX","name":"Helicopter Gunship DEX","description":"Game Description Helicopter Gunship DEX offers the experience of piloting combat helicopters. Players take control of rotorcraft, navigating and using weapons during combat encounters. This project contains elements of simulation games from the nineties, adapted for modern platforms. A key feature is the direct control of guidance systems, including containers and radar, while piloting the aircraft during mission execution.\nA special algorithm procedurally creates missions, offering different goals and tactical conditions.","keywords":["Indie","Simulation","Action"],"articleBody":"Game Description Helicopter Gunship DEX offers the experience of piloting combat helicopters. Players take control of rotorcraft, navigating and using weapons during combat encounters. This project contains elements of simulation games from the nineties, adapted for modern platforms. A key feature is the direct control of guidance systems, including containers and radar, while piloting the aircraft during mission execution.\nA special algorithm procedurally creates missions, offering different goals and tactical conditions. The built-in random mission generator in Helicopter Gunship DEX generates missions including Strike, Suppression of Enemy Air Defense (SEAD), Search and Destroy, Recon, and Transport. These missions pose unique operational challenges for the player. The Deployment Points mechanic determines departure parameters, influencing equipment selection and maintaining balance in different scenarios.\nThis approach assigns cost points to the sides and weapons, which affects the choice of equipment for the specific conditions of the operation. You can pilot the car either with a first-person view from the cockpit or with a third-person camera. The interaction scheme is adapted for gamepads and uses Sensor of Interest (SOI) selection with modifier buttons to increase the number of available commands without remembering an abundance of keys; however, the button assignments are completely changeable for HOTAS systems. The game uses a physics flight model for rotorcraft, and the arsenal is not automatically replenished as you complete missions.\nGame Screenshots ×    ×    ×    ×    ×    ×    ×    ×    ×    ×    ×    ×     Game Videos   ","wordCount":"238","inLanguage":"en","image":"https://game-vibe.github.io/posts/helicopter-gunship-dex/images/helicopter-gunship-dex.jpg","datePublished":"2022-12-01T00:00:00Z","dateModified":"2022-12-01T00:00:00Z","author":{"@type":"Person","name":"Seiri"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://game-vibe.github.io/posts/helicopter-gunship-dex/"},"publisher":{"@type":"Organization","name":"Game Vibe","logo":{"@type":"ImageObject","url":"https://game-vibe.github.io/favicon.ico"}}}</script>
+A special algorithm procedurally creates missions, offering different goals and tactical conditions." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://game-vibe.github.io/posts/helicopter-gunship-dex/" /><meta property="og:image" content="https://game-vibe.github.io/posts/helicopter-gunship-dex/images/helicopter-gunship-dex.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-01T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://game-vibe.github.io/posts/helicopter-gunship-dex/images/helicopter-gunship-dex.jpg" />
+<meta name="twitter:title" content="Helicopter Gunship DEX"/>
+<meta name="twitter:description" content="Game Description Helicopter Gunship DEX offers the experience of piloting combat helicopters. Players take control of rotorcraft, navigating and using weapons during combat encounters. This project contains elements of simulation games from the nineties, adapted for modern platforms. A key feature is the direct control of guidance systems, including containers and radar, while piloting the aircraft during mission execution.
+A special algorithm procedurally creates missions, offering different goals and tactical conditions."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://game-vibe.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Helicopter Gunship DEX",
+      "item": "https://game-vibe.github.io/posts/helicopter-gunship-dex/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Helicopter Gunship DEX",
+  "name": "Helicopter Gunship DEX",
+  "description": "Game Description Helicopter Gunship DEX offers the experience of piloting combat helicopters. Players take control of rotorcraft, navigating and using weapons during combat encounters. This project contains elements of simulation games from the nineties, adapted for modern platforms. A key feature is the direct control of guidance systems, including containers and radar, while piloting the aircraft during mission execution.\nA special algorithm procedurally creates missions, offering different goals and tactical conditions.",
+  "keywords": [
+    "Indie", "Simulation", "Action"
+  ],
+  "articleBody": "Game Description Helicopter Gunship DEX offers the experience of piloting combat helicopters. Players take control of rotorcraft, navigating and using weapons during combat encounters. This project contains elements of simulation games from the nineties, adapted for modern platforms. A key feature is the direct control of guidance systems, including containers and radar, while piloting the aircraft during mission execution.\nA special algorithm procedurally creates missions, offering different goals and tactical conditions. The built-in random mission generator in Helicopter Gunship DEX generates missions including Strike, Suppression of Enemy Air Defense (SEAD), Search and Destroy, Recon, and Transport. These missions pose unique operational challenges for the player. The Deployment Points mechanic determines departure parameters, influencing equipment selection and maintaining balance in different scenarios.\nThis approach assigns cost points to the sides and weapons, which affects the choice of equipment for the specific conditions of the operation. You can pilot the car either with a first-person view from the cockpit or with a third-person camera. The interaction scheme is adapted for gamepads and uses Sensor of Interest (SOI) selection with modifier buttons to increase the number of available commands without remembering an abundance of keys; however, the button assignments are completely changeable for HOTAS systems. The game uses a physics flight model for rotorcraft, and the arsenal is not automatically replenished as you complete missions.\nGame Screenshots ×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r\rGame Videos \r\r",
+  "wordCount" : "238",
+  "inLanguage": "en",
+  "image":
+    "https://game-vibe.github.io/posts/helicopter-gunship-dex/images/helicopter-gunship-dex.jpg","datePublished": "2022-12-01T00:00:00Z",
+  "dateModified": "2022-12-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Seiri"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://game-vibe.github.io/posts/helicopter-gunship-dex/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Game Vibe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://game-vibe.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white" id=top><header class="bg-gray-900 bg-opacity-90 backdrop-blur-sm">
-<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-<div class="flex items-center space-x-2">
-<a href=https://game-vibe.github.io/ title="Game Vibe" class="flex justify-center">
-<img src=/logo.png alt="Game Vibe" class="w-12 h-12">
-<h1 class="ml-3 text-2xl font-bold">Game Vibe</h1>
-</a>
-</div>
-<ul class="hidden md:flex space-x-8">
-<li>
-<a href=/ title=Home class="text-gray-300 hover:text-white transition duration-150 ease-in-out">
-<span>Home</span>
-</a>
-</li>
-<li>
-<a href=/tags/ title=Tags class="text-gray-300 hover:text-white transition duration-150 ease-in-out">
-<span>Tags</span>
-</a>
-</li>
-<li>
-<a href=/policy/ title="Privacy Policy" class="text-gray-300 hover:text-white transition duration-150 ease-in-out">
-<span>Privacy Policy</span>
-</a>
-</li>
-</ul>
-<a class="md:block px-4 py-2 rounded-md border border-gray-600 hover:bg-gray-700 transition duration-150 ease-in-out" href=https://game-vibe.github.io/search title=Search><svg class="h-5 w-5" fill="none" stroke="currentcolor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21l-6-6m2-5A7 7 0 113 10a7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-</a>
-</nav>
+<body class='min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white' id="top"><header class="bg-gray-900 bg-opacity-90 backdrop-blur-sm">
+  <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <a
+        href='https://game-vibe.github.io/'
+        title="Game Vibe"
+        class="flex justify-center"
+      >
+      <img src="/logo.png" alt="Game Vibe" class="w-12 h-12" />
+        
+        <h1 class="ml-3 text-2xl font-bold">Game Vibe</h1>
+      </a>
+    </div>
+    <ul class="hidden md:flex space-x-8">
+      <li>
+        <a
+          href="/"
+          title="Home"
+          class="text-gray-300 hover:text-white transition duration-150 ease-in-out"
+        >
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/tags/"
+          title="Tags"
+          class="text-gray-300 hover:text-white transition duration-150 ease-in-out"
+        >
+          <span>Tags</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/policy/"
+          title="Privacy Policy"
+          class="text-gray-300 hover:text-white transition duration-150 ease-in-out"
+        >
+          <span>Privacy Policy</span>
+        </a>
+      </li>
+    </ul>
+
+    <a
+      class="md:block px-4 py-2 rounded-md border border-gray-600 hover:bg-gray-700 transition duration-150 ease-in-out"
+      href='https://game-vibe.github.io/search'
+      title="Search"
+    >
+      <svg
+        class="h-5 w-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        ></path>
+      </svg>
+    </a>
+  </nav>
 </header>
+
 <main class="container mx-auto px-6 py-8">
-<div class=mb-6 style=margin-top:.5em;text-align:center>
-<ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4988552421895566 data-ad-slot=4415536934 data-ad-format=auto data-full-width-responsive=true></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
-</div>
-<div class="bg-gray-800 rounded-lg border border-gray-700 shadow-lg">
-<div class="flex flex-col md:flex-row text-center p-8">
-<div class="lg:w-1/4 md:w-1/1 mb-8 md:mb-0">
-<img alt="Helicopter Gunship DEX" loading=lazy style=height:25rem class="rounded-lg shadow-lg w-full object-cover" src=/images/helicopter-gunship-dex.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
-</div>
-<div class="lg:w-3/4 md:w-1/1 lg:mx-10 md:mx-6">
-<div class=w-full>
-<h2 class="text-4xl font-bold mb-4 w-full">Helicopter Gunship DEX</h1>
-<div class="flex justify-center flex-wrap gap-2 w-full my-4">
-<a href=https://game-vibe.github.io/tags/indie/>
-<span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Indie</span>
-</a>
-<a href=https://game-vibe.github.io/tags/simulation/>
-<span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Simulation</span>
-</a>
-<a href=https://game-vibe.github.io/tags/action/>
-<span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Action</span>
-</a>
-</div>
-</div>
-<div class="flex flex-col md:flex-row w-full py-8">
-<div class="flex flex-col md:w-1/2">
-<div class="text-lg font-semibold mb-4">Information:</div>
-<div class="grid grid-cols-2 gap-4 mb-6 my-2">
-<div>
-<span class="text-lg font-semibold">Release Date</span>
-<p>2022/12/01</p>
-</div>
-<div>
-<span class="text-lg font-semibold">Developer</span>
-<p>Jimmy Arcade Limited</p>
-</div>
-<div>
-<span class="text-lg font-semibold">Size</spans>
-<p>11GB</p>
-</div>
-<div>
-<span class="text-lg font-semibold">Language</span>
-<p>English</p>
-</div>
-</div>
-</div>
-<div class="flex flex-col md:w-1/2">
-<div class="text-lg font-semibold mb-4">System Requirements:</div>
-<div class="grid grid-cols-2 gap-4 mb-6 my-2">
-<div>
-<span class="text-lg font-semibold">OS</span>
-<p>Windows 10 (64-bit)</p>
-</div>
-<div>
-<span class="text-lg font-semibold">Processor</span>
-<p>Intel Core i5-6600k / AMD Ryzen 5 1400</p>
-</div>
-<div>
-<span class="text-lg font-semibold">RAM</span>
-<p>8 GB</p>
-</div>
-<div>
-<span class="text-lg font-semibold">Graphic Card</span>
-<p>Nvidia GeForce GTX 970</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="flex flex-col md:flex-row p-8">
-<div class=content-detail><h3 id=game-description>Game Description<a hidden class=anchor aria-hidden=true href=#game-description>#</a></h3>
+   <div class="mb-6" style="margin-top:0.5em;text-align: center;">
+      
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-4988552421895566"
+        data-ad-slot="4415536934"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      
+  </div>
+  <div class="bg-gray-800 rounded-lg border border-gray-700 shadow-lg">
+        <div class="flex flex-col md:flex-row text-center p-8">
+          <div class="lg:w-1/4 md:w-1/1 mb-8 md:mb-0">
+            <img alt="Helicopter Gunship DEX" loading="lazy" style="height:25rem;"
+              class="rounded-lg shadow-lg w-full object-cover" 
+              src="/images/helicopter-gunship-dex.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';"/>
+          </div>
+          <div class="lg:w-3/4 md:w-1/1 lg:mx-10 md:mx-6">
+            <div class="w-full">
+              <h2 class="text-4xl font-bold mb-4 w-full">Helicopter Gunship DEX</h1>
+              <div class="flex justify-center flex-wrap gap-2 w-full my-4 ">
+                <a href="https://game-vibe.github.io/tags/indie/">             
+                  <span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Indie</span>
+                </a>
+                <a href="https://game-vibe.github.io/tags/simulation/">             
+                  <span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Simulation</span>
+                </a>
+                <a href="https://game-vibe.github.io/tags/action/">             
+                  <span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Action</span>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row w-full py-8"> 
+              
+              <div class="flex flex-col md:w-1/2">
+                <div class="text-lg font-semibold mb-4">Information:</div>
+                <div class="grid grid-cols-2 gap-4 mb-6 my-2">
+                  <div>
+                    <span class="text-lg font-semibold">Release Date</span>
+                    <p>2022/12/01</p>
+                  </div>
+                  <div>
+                    <span class="text-lg font-semibold">Developer</span>
+                    <p>Jimmy Arcade Limited</p>
+                  </div>
+                  <div>
+                      <span class="text-lg font-semibold">Size</spans>
+                      <p>11GB</p>
+                  </div>
+                  <div>
+                    <span class="text-lg font-semibold">Language</span>
+                    <p>English</p>
+                  </div>
+                </div>    
+              </div>
+              
+              <div class="flex flex-col md:w-1/2">
+                
+                
+                <div class="text-lg font-semibold mb-4">System Requirements:</div>
+                <div class="grid grid-cols-2 gap-4 mb-6 my-2">
+                  <div>
+                    <span class="text-lg font-semibold">OS</span>
+                    <p>Windows 10 (64-bit)</p>
+                  </div>
+                  <div>
+                    <span class="text-lg font-semibold">Processor</span>
+                    <p>Intel Core i5-6600k / AMD Ryzen 5 1400</p>
+                  </div>
+                  <div>
+                    <span class="text-lg font-semibold">RAM</span>
+                    <p>8 GB</p>
+                  </div>
+                  <div>
+                    <span class="text-lg font-semibold">Graphic Card</span>
+                    <p>Nvidia GeForce GTX 970</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row p-8">
+          <div class="content-detail"><h3 id="game-description">Game Description<a hidden class="anchor" aria-hidden="true" href="#game-description">#</a></h3>
 <p>Helicopter Gunship DEX offers the experience of piloting combat helicopters. Players take control of rotorcraft, navigating and using weapons during combat encounters. This project contains elements of simulation games from the nineties, adapted for modern platforms. A key feature is the direct control of guidance systems, including containers and radar, while piloting the aircraft during mission execution.</p>
 <p>A special algorithm procedurally creates missions, offering different goals and tactical conditions. The built-in random mission generator in Helicopter Gunship DEX generates missions including Strike, Suppression of Enemy Air Defense (SEAD), Search and Destroy, Recon, and Transport. These missions pose unique operational challenges for the player. The Deployment Points mechanic determines departure parameters, influencing equipment selection and maintaining balance in different scenarios.</p>
 <p>This approach assigns cost points to the sides and weapons, which affects the choice of equipment for the specific conditions of the operation. You can pilot the car either with a first-person view from the cockpit or with a third-person camera. The interaction scheme is adapted for gamepads and uses Sensor of Interest (SOI) selection with modifier buttons to increase the number of available commands without remembering an abundance of keys; however, the button assignments are completely changeable for HOTAS systems. The game uses a physics flight model for rotorcraft, and the arsenal is not automatically replenished as you complete missions.</p>
-<h3 id=game-screenshots>Game Screenshots<a hidden class=anchor aria-hidden=true href=#game-screenshots>#</a></h3>
+<h3 id="game-screenshots">Game Screenshots<a hidden class="anchor" aria-hidden="true" href="#game-screenshots">#</a></h3>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-<label>
-<input type=checkbox>
-<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
-<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
-</span>
-<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-04/160ea26c40_1scr-104148.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</div>
-<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-04/160ea26c40_1scr-104148.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</label>
-<label>
-<input type=checkbox>
-<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
-<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
-</span>
-<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-04/ad9a324ec5_2scr-686939.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</div>
-<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-04/ad9a324ec5_2scr-686939.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</label>
-<label>
-<input type=checkbox>
-<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
-<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
-</span>
-<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-04/d46d4f0508_3scr-979283.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</div>
-<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-04/d46d4f0508_3scr-979283.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</label>
-<label>
-<input type=checkbox>
-<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
-<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
-</span>
-<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-04/b05c3b6394_4scr-115095.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</div>
-<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-04/b05c3b6394_4scr-115095.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</label>
-<label>
-<input type=checkbox>
-<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
-<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
-</span>
-<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-04/68874e44b9_5scr-177187.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</div>
-<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-04/68874e44b9_5scr-177187.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</label>
-<label>
-<input type=checkbox>
-<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
-<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
-</span>
-<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-04/9c6516dc6a_6scr-323348.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</div>
-<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-04/9c6516dc6a_6scr-323348.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</label>
-<label>
-<input type=checkbox>
-<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
-<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
-</span>
-<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-04/937a071f72_7scr-608146.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</div>
-<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-04/937a071f72_7scr-608146.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</label>
-<label>
-<input type=checkbox>
-<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
-<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
-</span>
-<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-04/d9d206fef4_8scr-280598.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</div>
-<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-04/d9d206fef4_8scr-280598.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</label>
-<label>
-<input type=checkbox>
-<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
-<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
-</span>
-<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-04/5a03ee4dbd_9scr-201258.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</div>
-<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-04/5a03ee4dbd_9scr-201258.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</label>
-<label>
-<input type=checkbox>
-<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
-<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
-</span>
-<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-04/3ac7b5e59b_10scr-860169.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</div>
-<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-04/3ac7b5e59b_10scr-860169.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</label>
-<label>
-<input type=checkbox>
-<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
-<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
-</span>
-<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-04/5885286747_11scr-116472.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</div>
-<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-04/5885286747_11scr-116472.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</label>
-<label>
-<input type=checkbox>
-<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
-<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
-</span>
-<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-04/d13b6e40d5_12scr-930704.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</div>
-<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-04/d13b6e40d5_12scr-930704.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt="Helicopter Gunship DEX">
-</label>
-</div>
-<h3 id=game-videos>Game Videos<a hidden class=anchor aria-hidden=true href=#game-videos>#</a></h3>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"><div class=video-card>
-<video class="w-full rounded" preload=metadata controls loop playsinline>
-<source src=https://cdn.akamai.steamstatic.com/steam/apps/256917693/movie_max.mp4>
-</video>
-</div></div>
-<section class=mb-12>
-<h3 class="text-2xl font-bold mb-6">More Game</h3>
-<div class="flex space-x-4 overflow-x-auto cast-scroll pb-4">
-<a href=https://game-vibe.github.io/posts/brush-burial-gutter-world/ aria-label="Brush Burial: Gutter World" class=entry-link>
-<div class="flex-none w-32">
-<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-<img alt="Brush Burial: Gutter World" class="w-full h-full object-cover" loading=lazy src=/images/brush-burial-gutter-world.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
-</div>
-<p class="text-sm line-clamp-1">Brush Burial: Gutter World</p>
-<p class="text-muted-foreground text-xs"> 2025/11/19</p>
-</div>
-</a>
-<a href=https://game-vibe.github.io/posts/stellar-tactics/ aria-label="Stellar Tactics" class=entry-link>
-<div class="flex-none w-32">
-<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-<img alt="Stellar Tactics" class="w-full h-full object-cover" loading=lazy src=/images/stellar-tactics.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
-</div>
-<p class="text-sm line-clamp-1">Stellar Tactics</p>
-<p class="text-muted-foreground text-xs"> 2016/09/23</p>
-</div>
-</a>
-<a href=https://game-vibe.github.io/posts/bearnard/ aria-label=Bearnard class=entry-link>
-<div class="flex-none w-32">
-<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-<img alt=Bearnard class="w-full h-full object-cover" loading=lazy src=/images/bearnard.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
-</div>
-<p class="text-sm line-clamp-1">Bearnard</p>
-<p class="text-muted-foreground text-xs"> 2024/08/12</p>
-</div>
-</a>
-<a href=https://game-vibe.github.io/posts/college-bowl/ aria-label="College Bowl" class=entry-link>
-<div class="flex-none w-32">
-<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-<img alt="College Bowl" class="w-full h-full object-cover" loading=lazy src=/images/college-bowl.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
-</div>
-<p class="text-sm line-clamp-1">College Bowl</p>
-<p class="text-muted-foreground text-xs"> 2024/06/20</p>
-</div>
-</a>
-<a href=https://game-vibe.github.io/posts/truck-driver/ aria-label="Truck Driver" class=entry-link>
-<div class="flex-none w-32">
-<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-<img alt="Truck Driver" class="w-full h-full object-cover" loading=lazy src=/images/truck-driver.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
-</div>
-<p class="text-sm line-clamp-1">Truck Driver</p>
-<p class="text-muted-foreground text-xs"> 2021/05/27</p>
-</div>
-</a>
-<a href=https://game-vibe.github.io/posts/baroque-become-a-meta-being-revive/ aria-label="BAROQUE Become a Meta Being Revive" class=entry-link>
-<div class="flex-none w-32">
-<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-<img alt="BAROQUE Become a Meta Being Revive" class="w-full h-full object-cover" loading=lazy src=/images/baroque-become-a-meta-being-revive.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
-</div>
-<p class="text-sm line-clamp-1">BAROQUE Become a Meta Being Revive</p>
-<p class="text-muted-foreground text-xs"> 2025/12/17</p>
-</div>
-</a>
-<a href=https://game-vibe.github.io/posts/stario-haven-tower/ aria-label="STARIO: Haven Tower" class=entry-link>
-<div class="flex-none w-32">
-<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-<img alt="STARIO: Haven Tower" class="w-full h-full object-cover" loading=lazy src=/images/stario-haven-tower.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
-</div>
-<p class="text-sm line-clamp-1">STARIO: Haven Tower</p>
-<p class="text-muted-foreground text-xs"> 2025/09/26</p>
-</div>
-</a>
-<a href=https://game-vibe.github.io/posts/subwaysim-2/ aria-label="Subway Sim 2" class=entry-link>
-<div class="flex-none w-32">
-<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-<img alt="Subway Sim 2" class="w-full h-full object-cover" loading=lazy src=/images/subwaysim-2.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
-</div>
-<p class="text-sm line-clamp-1">Subway Sim 2</p>
-<p class="text-muted-foreground text-xs"> 2025/04/29</p>
-</div>
-</a>
-<a href=https://game-vibe.github.io/posts/soul-stalker/ aria-label="Soul Stalker" class=entry-link>
-<div class="flex-none w-32">
-<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-<img alt="Soul Stalker" class="w-full h-full object-cover" loading=lazy src=/images/soul-stalker.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
-</div>
-<p class="text-sm line-clamp-1">Soul Stalker</p>
-<p class="text-muted-foreground text-xs"> 2024/10/24</p>
-</div>
-</a>
-<a href=https://game-vibe.github.io/posts/puffin-planes/ aria-label="Puffin Planes" class=entry-link>
-<div class="flex-none w-32">
-<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-<img alt="Puffin Planes" class="w-full h-full object-cover" loading=lazy src=/images/puffin-planes.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
-</div>
-<p class="text-sm line-clamp-1">Puffin Planes</p>
-<p class="text-muted-foreground text-xs"> 2024/09/04</p>
-</div>
-</a>
-</div>
+  <label class="">
+    <input type="checkbox"/>
+    <div
+      class="overlay"
+      onclick="this.parentNode.querySelector('input').checked=true"
+    >
+      <span
+        class="close-btn"
+        onclick="this.parentNode.querySelector('input').checked=false"
+        >&times;
+      </span>
+      <img
+        loading="lazy"
+        class="rounded-lg shadow-lg object-cover img-hover"
+        src="https://byrutgame.org/uploads/posts/2025-04/160ea26c40_1scr-104148.jpg"
+        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+        alt="Helicopter Gunship DEX"
+      />
+    </div>
+    <img
+      loading="lazy"
+      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
+      src="https://byrutgame.org/uploads/posts/2025-04/160ea26c40_1scr-104148.jpg"
+      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+      alt="Helicopter Gunship DEX"
+    />
+  </label>
+  
+  <label class="">
+    <input type="checkbox"/>
+    <div
+      class="overlay"
+      onclick="this.parentNode.querySelector('input').checked=true"
+    >
+      <span
+        class="close-btn"
+        onclick="this.parentNode.querySelector('input').checked=false"
+        >&times;
+      </span>
+      <img
+        loading="lazy"
+        class="rounded-lg shadow-lg object-cover img-hover"
+        src="https://byrutgame.org/uploads/posts/2025-04/ad9a324ec5_2scr-686939.jpg"
+        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+        alt="Helicopter Gunship DEX"
+      />
+    </div>
+    <img
+      loading="lazy"
+      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
+      src="https://byrutgame.org/uploads/posts/2025-04/ad9a324ec5_2scr-686939.jpg"
+      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+      alt="Helicopter Gunship DEX"
+    />
+  </label>
+  
+  <label class="">
+    <input type="checkbox"/>
+    <div
+      class="overlay"
+      onclick="this.parentNode.querySelector('input').checked=true"
+    >
+      <span
+        class="close-btn"
+        onclick="this.parentNode.querySelector('input').checked=false"
+        >&times;
+      </span>
+      <img
+        loading="lazy"
+        class="rounded-lg shadow-lg object-cover img-hover"
+        src="https://byrutgame.org/uploads/posts/2025-04/d46d4f0508_3scr-979283.jpg"
+        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+        alt="Helicopter Gunship DEX"
+      />
+    </div>
+    <img
+      loading="lazy"
+      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
+      src="https://byrutgame.org/uploads/posts/2025-04/d46d4f0508_3scr-979283.jpg"
+      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+      alt="Helicopter Gunship DEX"
+    />
+  </label>
+  
+  <label class="">
+    <input type="checkbox"/>
+    <div
+      class="overlay"
+      onclick="this.parentNode.querySelector('input').checked=true"
+    >
+      <span
+        class="close-btn"
+        onclick="this.parentNode.querySelector('input').checked=false"
+        >&times;
+      </span>
+      <img
+        loading="lazy"
+        class="rounded-lg shadow-lg object-cover img-hover"
+        src="https://byrutgame.org/uploads/posts/2025-04/b05c3b6394_4scr-115095.jpg"
+        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+        alt="Helicopter Gunship DEX"
+      />
+    </div>
+    <img
+      loading="lazy"
+      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
+      src="https://byrutgame.org/uploads/posts/2025-04/b05c3b6394_4scr-115095.jpg"
+      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+      alt="Helicopter Gunship DEX"
+    />
+  </label>
+  
+  <label class="">
+    <input type="checkbox"/>
+    <div
+      class="overlay"
+      onclick="this.parentNode.querySelector('input').checked=true"
+    >
+      <span
+        class="close-btn"
+        onclick="this.parentNode.querySelector('input').checked=false"
+        >&times;
+      </span>
+      <img
+        loading="lazy"
+        class="rounded-lg shadow-lg object-cover img-hover"
+        src="https://byrutgame.org/uploads/posts/2025-04/68874e44b9_5scr-177187.jpg"
+        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+        alt="Helicopter Gunship DEX"
+      />
+    </div>
+    <img
+      loading="lazy"
+      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
+      src="https://byrutgame.org/uploads/posts/2025-04/68874e44b9_5scr-177187.jpg"
+      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+      alt="Helicopter Gunship DEX"
+    />
+  </label>
+  
+  <label class="">
+    <input type="checkbox"/>
+    <div
+      class="overlay"
+      onclick="this.parentNode.querySelector('input').checked=true"
+    >
+      <span
+        class="close-btn"
+        onclick="this.parentNode.querySelector('input').checked=false"
+        >&times;
+      </span>
+      <img
+        loading="lazy"
+        class="rounded-lg shadow-lg object-cover img-hover"
+        src="https://byrutgame.org/uploads/posts/2025-04/9c6516dc6a_6scr-323348.jpg"
+        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+        alt="Helicopter Gunship DEX"
+      />
+    </div>
+    <img
+      loading="lazy"
+      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
+      src="https://byrutgame.org/uploads/posts/2025-04/9c6516dc6a_6scr-323348.jpg"
+      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+      alt="Helicopter Gunship DEX"
+    />
+  </label>
+  
+  <label class="">
+    <input type="checkbox"/>
+    <div
+      class="overlay"
+      onclick="this.parentNode.querySelector('input').checked=true"
+    >
+      <span
+        class="close-btn"
+        onclick="this.parentNode.querySelector('input').checked=false"
+        >&times;
+      </span>
+      <img
+        loading="lazy"
+        class="rounded-lg shadow-lg object-cover img-hover"
+        src="https://byrutgame.org/uploads/posts/2025-04/937a071f72_7scr-608146.jpg"
+        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+        alt="Helicopter Gunship DEX"
+      />
+    </div>
+    <img
+      loading="lazy"
+      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
+      src="https://byrutgame.org/uploads/posts/2025-04/937a071f72_7scr-608146.jpg"
+      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+      alt="Helicopter Gunship DEX"
+    />
+  </label>
+  
+  <label class="">
+    <input type="checkbox"/>
+    <div
+      class="overlay"
+      onclick="this.parentNode.querySelector('input').checked=true"
+    >
+      <span
+        class="close-btn"
+        onclick="this.parentNode.querySelector('input').checked=false"
+        >&times;
+      </span>
+      <img
+        loading="lazy"
+        class="rounded-lg shadow-lg object-cover img-hover"
+        src="https://byrutgame.org/uploads/posts/2025-04/d9d206fef4_8scr-280598.jpg"
+        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+        alt="Helicopter Gunship DEX"
+      />
+    </div>
+    <img
+      loading="lazy"
+      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
+      src="https://byrutgame.org/uploads/posts/2025-04/d9d206fef4_8scr-280598.jpg"
+      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+      alt="Helicopter Gunship DEX"
+    />
+  </label>
+  
+  <label class="">
+    <input type="checkbox"/>
+    <div
+      class="overlay"
+      onclick="this.parentNode.querySelector('input').checked=true"
+    >
+      <span
+        class="close-btn"
+        onclick="this.parentNode.querySelector('input').checked=false"
+        >&times;
+      </span>
+      <img
+        loading="lazy"
+        class="rounded-lg shadow-lg object-cover img-hover"
+        src="https://byrutgame.org/uploads/posts/2025-04/5a03ee4dbd_9scr-201258.jpg"
+        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+        alt="Helicopter Gunship DEX"
+      />
+    </div>
+    <img
+      loading="lazy"
+      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
+      src="https://byrutgame.org/uploads/posts/2025-04/5a03ee4dbd_9scr-201258.jpg"
+      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+      alt="Helicopter Gunship DEX"
+    />
+  </label>
+  
+  <label class="">
+    <input type="checkbox"/>
+    <div
+      class="overlay"
+      onclick="this.parentNode.querySelector('input').checked=true"
+    >
+      <span
+        class="close-btn"
+        onclick="this.parentNode.querySelector('input').checked=false"
+        >&times;
+      </span>
+      <img
+        loading="lazy"
+        class="rounded-lg shadow-lg object-cover img-hover"
+        src="https://byrutgame.org/uploads/posts/2025-04/3ac7b5e59b_10scr-860169.jpg"
+        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+        alt="Helicopter Gunship DEX"
+      />
+    </div>
+    <img
+      loading="lazy"
+      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
+      src="https://byrutgame.org/uploads/posts/2025-04/3ac7b5e59b_10scr-860169.jpg"
+      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+      alt="Helicopter Gunship DEX"
+    />
+  </label>
+  
+  <label class="">
+    <input type="checkbox"/>
+    <div
+      class="overlay"
+      onclick="this.parentNode.querySelector('input').checked=true"
+    >
+      <span
+        class="close-btn"
+        onclick="this.parentNode.querySelector('input').checked=false"
+        >&times;
+      </span>
+      <img
+        loading="lazy"
+        class="rounded-lg shadow-lg object-cover img-hover"
+        src="https://byrutgame.org/uploads/posts/2025-04/5885286747_11scr-116472.jpg"
+        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+        alt="Helicopter Gunship DEX"
+      />
+    </div>
+    <img
+      loading="lazy"
+      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
+      src="https://byrutgame.org/uploads/posts/2025-04/5885286747_11scr-116472.jpg"
+      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+      alt="Helicopter Gunship DEX"
+    />
+  </label>
+  
+  <label class="">
+    <input type="checkbox"/>
+    <div
+      class="overlay"
+      onclick="this.parentNode.querySelector('input').checked=true"
+    >
+      <span
+        class="close-btn"
+        onclick="this.parentNode.querySelector('input').checked=false"
+        >&times;
+      </span>
+      <img
+        loading="lazy"
+        class="rounded-lg shadow-lg object-cover img-hover"
+        src="https://byrutgame.org/uploads/posts/2025-04/d13b6e40d5_12scr-930704.jpg"
+        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+        alt="Helicopter Gunship DEX"
+      />
+    </div>
+    <img
+      loading="lazy"
+      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
+      src="https://byrutgame.org/uploads/posts/2025-04/d13b6e40d5_12scr-930704.jpg"
+      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
+      alt="Helicopter Gunship DEX"
+    />
+  </label>
+  </div>
+
+<h3 id="game-videos">Game Videos<a hidden class="anchor" aria-hidden="true" href="#game-videos">#</a></h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"><div class="video-card">
+    <video
+      class="w-full rounded"
+      preload="metadata"
+      controls
+      loop
+      playsinline
+    >
+      <source src="https://cdn.akamai.steamstatic.com/steam/apps/256917693/movie_max.mp4" />
+    </video>
+  </div></div>
+
+
+
+
+
+
+
+<section class="mb-12">
+  <h3 class="text-2xl font-bold mb-6">More Game</h3>
+  <div class="flex space-x-4 overflow-x-auto cast-scroll pb-4">
+  
+    <a href="https://game-vibe.github.io/posts/below-the-crown/" aria-label="Below the Crown" class="entry-link">
+        <div class="flex-none w-32">
+          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+              <img alt="Below the Crown" class="w-full h-full object-cover" loading="lazy" src="/images/below-the-crown.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
+          </div>
+          <p class="text-sm line-clamp-1">Below the Crown</p>
+          <p class="text-muted-foreground text-xs"> 2025/11/10</p>
+        </div>
+      </a>
+  
+    <a href="https://game-vibe.github.io/posts/book-of-hours/" aria-label="BOOK OF HOURS" class="entry-link">
+        <div class="flex-none w-32">
+          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+              <img alt="BOOK OF HOURS" class="w-full h-full object-cover" loading="lazy" src="/images/book-of-hours.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
+          </div>
+          <p class="text-sm line-clamp-1">BOOK OF HOURS</p>
+          <p class="text-muted-foreground text-xs"> 2023/08/18</p>
+        </div>
+      </a>
+  
+    <a href="https://game-vibe.github.io/posts/unpetrified-echoes-of-nature/" aria-label="Unpetrified: Echoes of Nature" class="entry-link">
+        <div class="flex-none w-32">
+          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+              <img alt="Unpetrified: Echoes of Nature" class="w-full h-full object-cover" loading="lazy" src="/images/unpetrified-echoes-of-nature.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
+          </div>
+          <p class="text-sm line-clamp-1">Unpetrified: Echoes of Nature</p>
+          <p class="text-muted-foreground text-xs"> 2025/11/11</p>
+        </div>
+      </a>
+  
+    <a href="https://game-vibe.github.io/posts/kadomon-hyper-auto-battlers/" aria-label="Kadomon: Hyper Auto Battlers" class="entry-link">
+        <div class="flex-none w-32">
+          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+              <img alt="Kadomon: Hyper Auto Battlers" class="w-full h-full object-cover" loading="lazy" src="/images/kadomon-hyper-auto-battlers.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
+          </div>
+          <p class="text-sm line-clamp-1">Kadomon: Hyper Auto Battlers</p>
+          <p class="text-muted-foreground text-xs"> 2025/04/07</p>
+        </div>
+      </a>
+  
+    <a href="https://game-vibe.github.io/posts/builderment/" aria-label="Buildement" class="entry-link">
+        <div class="flex-none w-32">
+          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+              <img alt="Buildement" class="w-full h-full object-cover" loading="lazy" src="/images/builderment.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
+          </div>
+          <p class="text-sm line-clamp-1">Buildement</p>
+          <p class="text-muted-foreground text-xs"> 2023/10/24</p>
+        </div>
+      </a>
+  
+    <a href="https://game-vibe.github.io/posts/nightwatch-closer/" aria-label="Nightwatch: Closer" class="entry-link">
+        <div class="flex-none w-32">
+          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+              <img alt="Nightwatch: Closer" class="w-full h-full object-cover" loading="lazy" src="/images/nightwatch-closer.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
+          </div>
+          <p class="text-sm line-clamp-1">Nightwatch: Closer</p>
+          <p class="text-muted-foreground text-xs"> 2024/09/10</p>
+        </div>
+      </a>
+  
+    <a href="https://game-vibe.github.io/posts/recycling-center-simulator/" aria-label="Recycling Center Simulator" class="entry-link">
+        <div class="flex-none w-32">
+          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+              <img alt="Recycling Center Simulator" class="w-full h-full object-cover" loading="lazy" src="/images/recycling-center-simulator.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
+          </div>
+          <p class="text-sm line-clamp-1">Recycling Center Simulator</p>
+          <p class="text-muted-foreground text-xs"> 2024/10/02</p>
+        </div>
+      </a>
+  
+    <a href="https://game-vibe.github.io/posts/galactic-plague-2000/" aria-label="Galactic Plague 2000" class="entry-link">
+        <div class="flex-none w-32">
+          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+              <img alt="Galactic Plague 2000" class="w-full h-full object-cover" loading="lazy" src="/images/galactic-plague-2000.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
+          </div>
+          <p class="text-sm line-clamp-1">Galactic Plague 2000</p>
+          <p class="text-muted-foreground text-xs"> 2025/04/30</p>
+        </div>
+      </a>
+  
+    <a href="https://game-vibe.github.io/posts/axon-td-uprising-tower-defense/" aria-label="Axon TD: Uprising - Tower Defense" class="entry-link">
+        <div class="flex-none w-32">
+          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+              <img alt="Axon TD: Uprising - Tower Defense" class="w-full h-full object-cover" loading="lazy" src="/images/axon-td-uprising-tower-defense.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
+          </div>
+          <p class="text-sm line-clamp-1">Axon TD: Uprising - Tower Defense</p>
+          <p class="text-muted-foreground text-xs"> 2024/09/27</p>
+        </div>
+      </a>
+  
+    <a href="https://game-vibe.github.io/posts/outbreak-shades-of-horror-chromatic-split/" aria-label="Outbreak: Shades of Horror Chromatic Split" class="entry-link">
+        <div class="flex-none w-32">
+          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+              <img alt="Outbreak: Shades of Horror Chromatic Split" class="w-full h-full object-cover" loading="lazy" src="/images/outbreak-shades-of-horror-chromatic-split.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
+          </div>
+          <p class="text-sm line-clamp-1">Outbreak: Shades of Horror Chromatic Split</p>
+          <p class="text-muted-foreground text-xs"> 2024/10/29</p>
+        </div>
+      </a>
+  
+  </div>
 </section>
-</div>
-</div>
-<div class=mb-6 style=margin-top:.5em;text-align:center>
-<ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4988552421895566 data-ad-slot=4415536934 data-ad-format=auto data-full-width-responsive=true></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
-</div>
-<div><script src=https://giscus.app/client.js data-repo=seiri-blog/seiri-blog.github.io data-repo-id=R_kgDOJGyRgA data-category=General data-category-id=DIC_kwDOJGyRgM4CgDQM data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=bottom data-theme=dark_dimmed data-lang=en crossorigin=anonymous async></script>
-</div>
-</div>
-</main><a class=facebook target=_blank rel="noopener noreferrer" aria-label="share Helicopter Gunship DEX on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fgame-vibe.github.io%2fposts%2fhelicopter-gunship-dex%2f" title="Facebook Share"><svg viewBox="0 0 512 512" height="20" width="20" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg>
+          </div>
+        </div>
+        <div class="mb-6" style="margin-top:0.5em;text-align: center;">
+          
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4988552421895566"
+            data-ad-slot="4415536934"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        
+        </div>
+        <div><script src="https://giscus.app/client.js"
+        data-repo="seiri-blog/seiri-blog.github.io"
+        data-repo-id="R_kgDOJGyRgA"
+        data-category="General"
+        data-category-id="DIC_kwDOJGyRgM4CgDQM"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="dark_dimmed"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+        </div>
+    </div>
+</main><a class="facebook" target="_blank" rel="noopener noreferrer" aria-label="share Helicopter Gunship DEX on facebook" href='https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fgame-vibe.github.io%2fposts%2fhelicopter-gunship-dex%2f' title='Facebook Share'>
+    <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="20px" width="20px" fill="currentColor">
+         <path  d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+    </svg>
 </a>
-<a class=twitter target=_blank rel="noopener noreferrer" aria-label="share Helicopter Gunship DEX on twitter" href="https://twitter.com/intent/tweet/?text=Helicopter%20Gunship%20DEX&url=https%3a%2f%2fgame-vibe.github.io%2fposts%2fhelicopter-gunship-dex%2f&hashtags=Indie%2cSimulation%2cAction" title="Twitter(X) Share"><svg id="svg5" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="30" width="30" viewBox="0 0 1700 1100"><g id="layer1" transform="translate(52.390088,-25.058597)"><path id="path1009" fill="#fff" d="M283.94 167.31l386.39 516.64L281.5 1104h87.51l340.42-367.76L984.48 1104h297.8L874.15 558.3l361.92-390.99h-87.51l-313.51 338.7-253.31-338.7H283.94zm128.69 64.46h136.81l604.13 807.76h-136.81L412.63 231.77z"/></g></svg>
+<a class="twitter" target='_blank' rel="noopener noreferrer" aria-label="share Helicopter Gunship DEX on twitter" href='https://twitter.com/intent/tweet/?text=Helicopter%20Gunship%20DEX&amp;url=https%3a%2f%2fgame-vibe.github.io%2fposts%2fhelicopter-gunship-dex%2f&amp;hashtags=Indie%2cSimulation%2cAction' title='Twitter(X) Share'>
+    <svg version="1.1" id="svg5" xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="30px" width="30px" viewBox="0 0 1700 1100">
+        <g id="layer1" transform="translate(52.390088,-25.058597)">
+        <path id="path1009" fill="#fff" d="M283.94,167.31l386.39,516.64L281.5,1104h87.51l340.42-367.76L984.48,1104h297.8L874.15,558.3l361.92-390.99 h-87.51l-313.51,338.7l-253.31-338.7H283.94z M412.63,231.77h136.81l604.13,807.76h-136.81L412.63,231.77z"/>
+        </g>
+    </svg>
 </a>
+    
 <footer class="bg-gray-900 border-t border-gray-800 py-8">
-<div class="container mx-auto px-6 text-gray-200 text-center">
-<p>&copy; 2026 Game Vibe. <br>
-<p>All rights reserved.</p></p>
-</div>
+    <div class="container mx-auto px-6 text-gray-200 text-center">
+        <p>&copy; 2026 Game Vibe. <br/> 
+        <p>All rights reserved.</p></p>
+    </div>
 </footer>
-<a href=#top aria-label="go to top" title="Go to Top" class=top-link id=top-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+<a href="#top" aria-label="go to top" title="Go to Top" class="top-link" id="top-link">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
-<script>document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
-<script>const gotop=document.querySelector("#top-link");window.onscroll=function(){document.body.scrollTop>400||document.documentElement.scrollTop>400?(gotop.style.visibility="visible",gotop.style.opacity="1"):(gotop.style.visibility="hidden",gotop.style.opacity="0")}</script></body>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+</script>
+<script>
+    const gotop = document.querySelector("#top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            gotop.style.visibility = "visible";
+            gotop.style.opacity = "1";
+        } else {
+            gotop.style.visibility = "hidden";
+            gotop.style.opacity = "0";
+        }
+    };
+</script></body>
+
 </html>
