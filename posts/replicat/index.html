@@ -1,739 +1,348 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
 <title>Replicate | Game Vibe</title>
-<meta name="keywords" content="Indie, Strategy">
-<meta name="description" content='Game Description Replicat is a card-based roguelike project that uses matchmaking mechanics at the core of its gameplay, complemented by deck-building elements. Instead of relying solely on memory, gamers are given the opportunity to be strategic about the process of memorization. Success here depends not so much on the ability to remember the location of all the tiles, but on well-structured tactics and effective use of cards. The atmosphere is created by charming cat characters and jazzy musical accompaniment, turning each game into a cozy but thoughtful adventure.'>
-<meta name="author" content='Seiri'>
-<link rel="canonical" href='https://game-vibe.github.io/posts/replicat/'>
-<meta name="yandex-verification" content="b99c9362143ec86b">
-<link rel="stylesheet" href="/assets/css/common/main.css">
-<link rel="stylesheet" href="/assets/css/includes.css">
-<link rel="stylesheet" href="/assets/css/includes/cookieconsent.css">
-<script src="/assets/js/cookieconsent.js"></script>
-<script type="module" src="/assets/js/cookieconsent-config.js"></script>
-<script type="text/javascript" src="https://cdn.tailwindcss.com"></script>
-<link rel="icon" href='https://game-vibe.github.io/favicon.ico'>
-<link rel="apple-touch-icon" href='https://game-vibe.github.io/apple-touch-icon.png'>
-<meta name="theme-color" content='#111828'>
-<meta name="msapplication-TileColor" content='#111828'>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4988552421895566"
-     crossorigin="anonymous"></script>
+<meta name=keywords content="Indie,Strategy">
+<meta name=description content="Game Description Replicat is a card-based roguelike project that uses matchmaking mechanics at the core of its gameplay, complemented by deck-building elements. Instead of relying solely on memory, gamers are given the opportunity to be strategic about the process of memorization. Success here depends not so much on the ability to remember the location of all the tiles, but on well-structured tactics and effective use of cards. The atmosphere is created by charming cat characters and jazzy musical accompaniment, turning each game into a cozy but thoughtful adventure.">
+<meta name=author content="Seiri">
+<link rel=canonical href=https://game-vibe.github.io/posts/replicat/>
+<meta name=yandex-verification content="b99c9362143ec86b">
+<link rel=stylesheet href=/assets/css/common/main.css>
+<link rel=stylesheet href=/assets/css/includes.css>
+<link rel=stylesheet href=/assets/css/includes/cookieconsent.css>
+<script src=/assets/js/cookieconsent.js></script>
+<script type=module src=/assets/js/cookieconsent-config.js></script>
+<script type=text/javascript src=https://cdn.tailwindcss.com></script>
+<link rel=icon href=https://game-vibe.github.io/favicon.ico>
+<link rel=apple-touch-icon href=https://game-vibe.github.io/apple-touch-icon.png>
+<meta name=theme-color content="#111828">
+<meta name=msapplication-TileColor content="#111828">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4988552421895566" crossorigin=anonymous></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J3ZLQ4H9X8"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-J3ZLQ4H9X8', { 'anonymize_ip': false });
-}
-</script>
-
-<script type="text/javascript">
-gtag('consent', 'default', {
-  'ad_storage': 'denied',
-  'ad_user_data': 'denied',
-  'ad_personalization': 'denied',
-  'analytics_storage': 'denied'
-});
-</script><meta property="og:title" content="Replicate" />
-<meta property="og:description" content="Game Description Replicat is a card-based roguelike project that uses matchmaking mechanics at the core of its gameplay, complemented by deck-building elements. Instead of relying solely on memory, gamers are given the opportunity to be strategic about the process of memorization. Success here depends not so much on the ability to remember the location of all the tiles, but on well-structured tactics and effective use of cards. The atmosphere is created by charming cat characters and jazzy musical accompaniment, turning each game into a cozy but thoughtful adventure." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://game-vibe.github.io/posts/replicat/" /><meta property="og:image" content="https://game-vibe.github.io/posts/replicat/images/replicat.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-11-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-11-18T00:00:00+00:00" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://game-vibe.github.io/posts/replicat/images/replicat.jpg" />
-<meta name="twitter:title" content="Replicate"/>
-<meta name="twitter:description" content="Game Description Replicat is a card-based roguelike project that uses matchmaking mechanics at the core of its gameplay, complemented by deck-building elements. Instead of relying solely on memory, gamers are given the opportunity to be strategic about the process of memorization. Success here depends not so much on the ability to remember the location of all the tiles, but on well-structured tactics and effective use of cards. The atmosphere is created by charming cat characters and jazzy musical accompaniment, turning each game into a cozy but thoughtful adventure."/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://game-vibe.github.io/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Replicate",
-      "item": "https://game-vibe.github.io/posts/replicat/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Replicate",
-  "name": "Replicate",
-  "description": "Game Description Replicat is a card-based roguelike project that uses matchmaking mechanics at the core of its gameplay, complemented by deck-building elements. Instead of relying solely on memory, gamers are given the opportunity to be strategic about the process of memorization. Success here depends not so much on the ability to remember the location of all the tiles, but on well-structured tactics and effective use of cards. The atmosphere is created by charming cat characters and jazzy musical accompaniment, turning each game into a cozy but thoughtful adventure.",
-  "keywords": [
-    "Indie", "Strategy"
-  ],
-  "articleBody": "Game Description Replicat is a card-based roguelike project that uses matchmaking mechanics at the core of its gameplay, complemented by deck-building elements. Instead of relying solely on memory, gamers are given the opportunity to be strategic about the process of memorization. Success here depends not so much on the ability to remember the location of all the tiles, but on well-structured tactics and effective use of cards. The atmosphere is created by charming cat characters and jazzy musical accompaniment, turning each game into a cozy but thoughtful adventure.\nMore than 90 cards with a variety of effects are available to form unique strategies, allowing you to change the rules right during the game. In addition, Replicat’s gameplay is significantly influenced by over 80 special curiosities that can turn mistakes into new opportunities. Procedural level generation and random modifiers ensure that each new attempt will be radically different from the previous one, offering fresh challenges and combinations to master.\nThe structure of the passage includes 21 levels with increasing difficulty, as well as battles with unique bosses that make their own adjustments to the rules. Starting with one of 10 starting decks, each offering a different style, players gradually earn experience. This experience is used to unlock new cards and sets, expanding tactical options and increasing replayability of the project, offering both relaxed sessions and intense challenges.\nGame Screenshots ×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r\rGame Videos \r\r",
-  "wordCount" : "239",
-  "inLanguage": "en",
-  "image":
-    "https://game-vibe.github.io/posts/replicat/images/replicat.jpg","datePublished": "2025-11-18T00:00:00Z",
-  "dateModified": "2025-11-18T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "Seiri"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://game-vibe.github.io/posts/replicat/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Game Vibe",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://game-vibe.github.io/favicon.ico"
-    }
-  }
-}
-</script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-J3ZLQ4H9X8',{anonymize_ip:!1})}</script>
+<script type=text/javascript>gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'})</script><meta property="og:title" content="Replicate">
+<meta property="og:description" content="Game Description Replicat is a card-based roguelike project that uses matchmaking mechanics at the core of its gameplay, complemented by deck-building elements. Instead of relying solely on memory, gamers are given the opportunity to be strategic about the process of memorization. Success here depends not so much on the ability to remember the location of all the tiles, but on well-structured tactics and effective use of cards. The atmosphere is created by charming cat characters and jazzy musical accompaniment, turning each game into a cozy but thoughtful adventure.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://game-vibe.github.io/posts/replicat/"><meta property="og:image" content="https://game-vibe.github.io/posts/replicat/images/replicat.jpg"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2025-11-18T00:00:00+00:00">
+<meta property="article:modified_time" content="2025-11-18T00:00:00+00:00">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://game-vibe.github.io/posts/replicat/images/replicat.jpg">
+<meta name=twitter:title content="Replicate">
+<meta name=twitter:description content="Game Description Replicat is a card-based roguelike project that uses matchmaking mechanics at the core of its gameplay, complemented by deck-building elements. Instead of relying solely on memory, gamers are given the opportunity to be strategic about the process of memorization. Success here depends not so much on the ability to remember the location of all the tiles, but on well-structured tactics and effective use of cards. The atmosphere is created by charming cat characters and jazzy musical accompaniment, turning each game into a cozy but thoughtful adventure.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://game-vibe.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Replicate","item":"https://game-vibe.github.io/posts/replicat/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Replicate","name":"Replicate","description":"Game Description Replicat is a card-based roguelike project that uses matchmaking mechanics at the core of its gameplay, complemented by deck-building elements. Instead of relying solely on memory, gamers are given the opportunity to be strategic about the process of memorization. Success here depends not so much on the ability to remember the location of all the tiles, but on well-structured tactics and effective use of cards. The atmosphere is created by charming cat characters and jazzy musical accompaniment, turning each game into a cozy but thoughtful adventure.","keywords":["Indie","Strategy"],"articleBody":"Game Description Replicat is a card-based roguelike project that uses matchmaking mechanics at the core of its gameplay, complemented by deck-building elements. Instead of relying solely on memory, gamers are given the opportunity to be strategic about the process of memorization. Success here depends not so much on the ability to remember the location of all the tiles, but on well-structured tactics and effective use of cards. The atmosphere is created by charming cat characters and jazzy musical accompaniment, turning each game into a cozy but thoughtful adventure.\nMore than 90 cards with a variety of effects are available to form unique strategies, allowing you to change the rules right during the game. In addition, Replicat’s gameplay is significantly influenced by over 80 special curiosities that can turn mistakes into new opportunities. Procedural level generation and random modifiers ensure that each new attempt will be radically different from the previous one, offering fresh challenges and combinations to master.\nThe structure of the passage includes 21 levels with increasing difficulty, as well as battles with unique bosses that make their own adjustments to the rules. Starting with one of 10 starting decks, each offering a different style, players gradually earn experience. This experience is used to unlock new cards and sets, expanding tactical options and increasing replayability of the project, offering both relaxed sessions and intense challenges.\nGame Screenshots ×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r×\r\r\r\r\rGame Videos \r\r","wordCount":"239","inLanguage":"en","image":"https://game-vibe.github.io/posts/replicat/images/replicat.jpg","datePublished":"2025-11-18T00:00:00Z","dateModified":"2025-11-18T00:00:00Z","author":{"@type":"Person","name":"Seiri"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://game-vibe.github.io/posts/replicat/"},"publisher":{"@type":"Organization","name":"Game Vibe","logo":{"@type":"ImageObject","url":"https://game-vibe.github.io/favicon.ico"}}}</script>
 </head>
-<body class='min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white' id="top"><header class="bg-gray-900 bg-opacity-90 backdrop-blur-sm">
-  <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center space-x-2">
-      <a
-        href='https://game-vibe.github.io/'
-        title="Game Vibe"
-        class="flex justify-center"
-      >
-      <img src="/logo.png" alt="Game Vibe" class="w-12 h-12" />
-        
-        <h1 class="ml-3 text-2xl font-bold">Game Vibe</h1>
-      </a>
-    </div>
-    <ul class="hidden md:flex space-x-8">
-      <li>
-        <a
-          href="/"
-          title="Home"
-          class="text-gray-300 hover:text-white transition duration-150 ease-in-out"
-        >
-          <span>Home</span>
-        </a>
-      </li>
-      <li>
-        <a
-          href="/tags/"
-          title="Tags"
-          class="text-gray-300 hover:text-white transition duration-150 ease-in-out"
-        >
-          <span>Tags</span>
-        </a>
-      </li>
-      <li>
-        <a
-          href="/policy/"
-          title="Privacy Policy"
-          class="text-gray-300 hover:text-white transition duration-150 ease-in-out"
-        >
-          <span>Privacy Policy</span>
-        </a>
-      </li>
-    </ul>
-
-    <a
-      class="md:block px-4 py-2 rounded-md border border-gray-600 hover:bg-gray-700 transition duration-150 ease-in-out"
-      href='https://game-vibe.github.io/search'
-      title="Search"
-    >
-      <svg
-        class="h-5 w-5"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-        ></path>
-      </svg>
-    </a>
-  </nav>
+<body class="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white" id=top><header class="bg-gray-900 bg-opacity-90 backdrop-blur-sm">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<a href=https://game-vibe.github.io/ title="Game Vibe" class="flex justify-center">
+<img src=/logo.png alt="Game Vibe" class="w-12 h-12">
+<h1 class="ml-3 text-2xl font-bold">Game Vibe</h1>
+</a>
+</div>
+<ul class="hidden md:flex space-x-8">
+<li>
+<a href=/ title=Home class="text-gray-300 hover:text-white transition duration-150 ease-in-out">
+<span>Home</span>
+</a>
+</li>
+<li>
+<a href=/tags/ title=Tags class="text-gray-300 hover:text-white transition duration-150 ease-in-out">
+<span>Tags</span>
+</a>
+</li>
+<li>
+<a href=/policy/ title="Privacy Policy" class="text-gray-300 hover:text-white transition duration-150 ease-in-out">
+<span>Privacy Policy</span>
+</a>
+</li>
+</ul>
+<a class="md:block px-4 py-2 rounded-md border border-gray-600 hover:bg-gray-700 transition duration-150 ease-in-out" href=https://game-vibe.github.io/search title=Search><svg class="h-5 w-5" fill="none" stroke="currentcolor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21l-6-6m2-5A7 7 0 113 10a7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+</a>
+</nav>
 </header>
-
 <main class="container mx-auto px-6 py-8">
-   <div class="mb-6" style="margin-top:0.5em;text-align: center;">
-      
-      <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-4988552421895566"
-        data-ad-slot="4415536934"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-      <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-      
-  </div>
-  <div class="bg-gray-800 rounded-lg border border-gray-700 shadow-lg">
-        <div class="flex flex-col md:flex-row text-center p-8">
-          <div class="lg:w-1/4 md:w-1/1 mb-8 md:mb-0">
-            <img alt="Replicate" loading="lazy" style="height:25rem;"
-              class="rounded-lg shadow-lg w-full object-cover" 
-              src="/images/replicat.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';"/>
-          </div>
-          <div class="lg:w-3/4 md:w-1/1 lg:mx-10 md:mx-6">
-            <div class="w-full">
-              <h2 class="text-4xl font-bold mb-4 w-full">Replicate</h1>
-              <div class="flex justify-center flex-wrap gap-2 w-full my-4 ">
-                <a href="https://game-vibe.github.io/tags/indie/">             
-                  <span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Indie</span>
-                </a>
-                <a href="https://game-vibe.github.io/tags/strategy/">             
-                  <span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Strategy</span>
-                </a>
-              </div>
-            </div>
-            <div class="flex flex-col md:flex-row w-full py-8"> 
-              
-              <div class="flex flex-col md:w-1/2">
-                <div class="text-lg font-semibold mb-4">Information:</div>
-                <div class="grid grid-cols-2 gap-4 mb-6 my-2">
-                  <div>
-                    <span class="text-lg font-semibold">Release Date</span>
-                    <p>2025/11/18</p>
-                  </div>
-                  <div>
-                    <span class="text-lg font-semibold">Developer</span>
-                    <p>Brainoid Games</p>
-                  </div>
-                  <div>
-                      <span class="text-lg font-semibold">Size</spans>
-                      <p>179MB</p>
-                  </div>
-                  <div>
-                    <span class="text-lg font-semibold">Language</span>
-                    <p>Russian</p>
-                  </div>
-                </div>    
-              </div>
-              
-              <div class="flex flex-col md:w-1/2">
-                
-                
-                <div class="text-lg font-semibold mb-4">System Requirements:</div>
-                <div class="grid grid-cols-2 gap-4 mb-6 my-2">
-                  <div>
-                    <span class="text-lg font-semibold">OS</span>
-                    <p>Windows 10, 11</p>
-                  </div>
-                  <div>
-                    <span class="text-lg font-semibold">Processor</span>
-                    <p>Intel Core 3</p>
-                  </div>
-                  <div>
-                    <span class="text-lg font-semibold">RAM</span>
-                    <p>1 GB</p>
-                  </div>
-                  <div>
-                    <span class="text-lg font-semibold">Graphic Card</span>
-                    <p>1 GB</p>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        <div class="flex flex-col md:flex-row p-8">
-          <div class="content-detail"><h3 id="game-description">Game Description<a hidden class="anchor" aria-hidden="true" href="#game-description">#</a></h3>
+<div class=mb-6 style=margin-top:.5em;text-align:center>
+<ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4988552421895566 data-ad-slot=4415536934 data-ad-format=auto data-full-width-responsive=true></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</div>
+<div class="bg-gray-800 rounded-lg border border-gray-700 shadow-lg">
+<div class="flex flex-col md:flex-row text-center p-8">
+<div class="lg:w-1/4 md:w-1/1 mb-8 md:mb-0">
+<img alt=Replicate loading=lazy style=height:25rem class="rounded-lg shadow-lg w-full object-cover" src=/images/replicat.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
+</div>
+<div class="lg:w-3/4 md:w-1/1 lg:mx-10 md:mx-6">
+<div class=w-full>
+<h2 class="text-4xl font-bold mb-4 w-full">Replicate</h1>
+<div class="flex justify-center flex-wrap gap-2 w-full my-4">
+<a href=https://game-vibe.github.io/tags/indie/>
+<span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Indie</span>
+</a>
+<a href=https://game-vibe.github.io/tags/strategy/>
+<span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">Strategy</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row w-full py-8">
+<div class="flex flex-col md:w-1/2">
+<div class="text-lg font-semibold mb-4">Information:</div>
+<div class="grid grid-cols-2 gap-4 mb-6 my-2">
+<div>
+<span class="text-lg font-semibold">Release Date</span>
+<p>2025/11/18</p>
+</div>
+<div>
+<span class="text-lg font-semibold">Developer</span>
+<p>Brainoid Games</p>
+</div>
+<div>
+<span class="text-lg font-semibold">Size</spans>
+<p>179MB</p>
+</div>
+<div>
+<span class="text-lg font-semibold">Language</span>
+<p>Russian</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:w-1/2">
+<div class="text-lg font-semibold mb-4">System Requirements:</div>
+<div class="grid grid-cols-2 gap-4 mb-6 my-2">
+<div>
+<span class="text-lg font-semibold">OS</span>
+<p>Windows 10, 11</p>
+</div>
+<div>
+<span class="text-lg font-semibold">Processor</span>
+<p>Intel Core 3</p>
+</div>
+<div>
+<span class="text-lg font-semibold">RAM</span>
+<p>1 GB</p>
+</div>
+<div>
+<span class="text-lg font-semibold">Graphic Card</span>
+<p>1 GB</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row p-8">
+<div class=content-detail><h3 id=game-description>Game Description<a hidden class=anchor aria-hidden=true href=#game-description>#</a></h3>
 <p>Replicat is a card-based roguelike project that uses matchmaking mechanics at the core of its gameplay, complemented by deck-building elements. Instead of relying solely on memory, gamers are given the opportunity to be strategic about the process of memorization. Success here depends not so much on the ability to remember the location of all the tiles, but on well-structured tactics and effective use of cards. The atmosphere is created by charming cat characters and jazzy musical accompaniment, turning each game into a cozy but thoughtful adventure.</p>
 <p>More than 90 cards with a variety of effects are available to form unique strategies, allowing you to change the rules right during the game. In addition, Replicat&rsquo;s gameplay is significantly influenced by over 80 special curiosities that can turn mistakes into new opportunities. Procedural level generation and random modifiers ensure that each new attempt will be radically different from the previous one, offering fresh challenges and combinations to master.</p>
 <p>The structure of the passage includes 21 levels with increasing difficulty, as well as battles with unique bosses that make their own adjustments to the rules. Starting with one of 10 starting decks, each offering a different style, players gradually earn experience. This experience is used to unlock new cards and sets, expanding tactical options and increasing replayability of the project, offering both relaxed sessions and intense challenges.</p>
-<h3 id="game-screenshots">Game Screenshots<a hidden class="anchor" aria-hidden="true" href="#game-screenshots">#</a></h3>
+<h3 id=game-screenshots>Game Screenshots<a hidden class=anchor aria-hidden=true href=#game-screenshots>#</a></h3>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-  <label class="">
-    <input type="checkbox"/>
-    <div
-      class="overlay"
-      onclick="this.parentNode.querySelector('input').checked=true"
-    >
-      <span
-        class="close-btn"
-        onclick="this.parentNode.querySelector('input').checked=false"
-        >&times;
-      </span>
-      <img
-        loading="lazy"
-        class="rounded-lg shadow-lg object-cover img-hover"
-        src="https://byrutgame.org/uploads/posts/2025-11/824b63d658_1scr-211074.jpg"
-        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-        alt="Replicate"
-      />
-    </div>
-    <img
-      loading="lazy"
-      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
-      src="https://byrutgame.org/uploads/posts/2025-11/824b63d658_1scr-211074.jpg"
-      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-      alt="Replicate"
-    />
-  </label>
-  
-  <label class="">
-    <input type="checkbox"/>
-    <div
-      class="overlay"
-      onclick="this.parentNode.querySelector('input').checked=true"
-    >
-      <span
-        class="close-btn"
-        onclick="this.parentNode.querySelector('input').checked=false"
-        >&times;
-      </span>
-      <img
-        loading="lazy"
-        class="rounded-lg shadow-lg object-cover img-hover"
-        src="https://byrutgame.org/uploads/posts/2025-11/4632cbacc3_2scr-649816.jpg"
-        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-        alt="Replicate"
-      />
-    </div>
-    <img
-      loading="lazy"
-      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
-      src="https://byrutgame.org/uploads/posts/2025-11/4632cbacc3_2scr-649816.jpg"
-      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-      alt="Replicate"
-    />
-  </label>
-  
-  <label class="">
-    <input type="checkbox"/>
-    <div
-      class="overlay"
-      onclick="this.parentNode.querySelector('input').checked=true"
-    >
-      <span
-        class="close-btn"
-        onclick="this.parentNode.querySelector('input').checked=false"
-        >&times;
-      </span>
-      <img
-        loading="lazy"
-        class="rounded-lg shadow-lg object-cover img-hover"
-        src="https://byrutgame.org/uploads/posts/2025-11/07ad3c3a5e_3scr-485697.jpg"
-        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-        alt="Replicate"
-      />
-    </div>
-    <img
-      loading="lazy"
-      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
-      src="https://byrutgame.org/uploads/posts/2025-11/07ad3c3a5e_3scr-485697.jpg"
-      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-      alt="Replicate"
-    />
-  </label>
-  
-  <label class="">
-    <input type="checkbox"/>
-    <div
-      class="overlay"
-      onclick="this.parentNode.querySelector('input').checked=true"
-    >
-      <span
-        class="close-btn"
-        onclick="this.parentNode.querySelector('input').checked=false"
-        >&times;
-      </span>
-      <img
-        loading="lazy"
-        class="rounded-lg shadow-lg object-cover img-hover"
-        src="https://byrutgame.org/uploads/posts/2025-11/572384226b_4scr-333320.jpg"
-        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-        alt="Replicate"
-      />
-    </div>
-    <img
-      loading="lazy"
-      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
-      src="https://byrutgame.org/uploads/posts/2025-11/572384226b_4scr-333320.jpg"
-      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-      alt="Replicate"
-    />
-  </label>
-  
-  <label class="">
-    <input type="checkbox"/>
-    <div
-      class="overlay"
-      onclick="this.parentNode.querySelector('input').checked=true"
-    >
-      <span
-        class="close-btn"
-        onclick="this.parentNode.querySelector('input').checked=false"
-        >&times;
-      </span>
-      <img
-        loading="lazy"
-        class="rounded-lg shadow-lg object-cover img-hover"
-        src="https://byrutgame.org/uploads/posts/2025-11/0486eda5ae_5scr-481628.jpg"
-        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-        alt="Replicate"
-      />
-    </div>
-    <img
-      loading="lazy"
-      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
-      src="https://byrutgame.org/uploads/posts/2025-11/0486eda5ae_5scr-481628.jpg"
-      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-      alt="Replicate"
-    />
-  </label>
-  
-  <label class="">
-    <input type="checkbox"/>
-    <div
-      class="overlay"
-      onclick="this.parentNode.querySelector('input').checked=true"
-    >
-      <span
-        class="close-btn"
-        onclick="this.parentNode.querySelector('input').checked=false"
-        >&times;
-      </span>
-      <img
-        loading="lazy"
-        class="rounded-lg shadow-lg object-cover img-hover"
-        src="https://byrutgame.org/uploads/posts/2025-11/00d101ef73_6scr-268531.jpg"
-        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-        alt="Replicate"
-      />
-    </div>
-    <img
-      loading="lazy"
-      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
-      src="https://byrutgame.org/uploads/posts/2025-11/00d101ef73_6scr-268531.jpg"
-      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-      alt="Replicate"
-    />
-  </label>
-  
-  <label class="">
-    <input type="checkbox"/>
-    <div
-      class="overlay"
-      onclick="this.parentNode.querySelector('input').checked=true"
-    >
-      <span
-        class="close-btn"
-        onclick="this.parentNode.querySelector('input').checked=false"
-        >&times;
-      </span>
-      <img
-        loading="lazy"
-        class="rounded-lg shadow-lg object-cover img-hover"
-        src="https://byrutgame.org/uploads/posts/2025-11/de15e2d50c_7scr-599665.jpg"
-        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-        alt="Replicate"
-      />
-    </div>
-    <img
-      loading="lazy"
-      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
-      src="https://byrutgame.org/uploads/posts/2025-11/de15e2d50c_7scr-599665.jpg"
-      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-      alt="Replicate"
-    />
-  </label>
-  
-  <label class="">
-    <input type="checkbox"/>
-    <div
-      class="overlay"
-      onclick="this.parentNode.querySelector('input').checked=true"
-    >
-      <span
-        class="close-btn"
-        onclick="this.parentNode.querySelector('input').checked=false"
-        >&times;
-      </span>
-      <img
-        loading="lazy"
-        class="rounded-lg shadow-lg object-cover img-hover"
-        src="https://byrutgame.org/uploads/posts/2025-11/23e1dd442c_8scr-246218.jpg"
-        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-        alt="Replicate"
-      />
-    </div>
-    <img
-      loading="lazy"
-      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
-      src="https://byrutgame.org/uploads/posts/2025-11/23e1dd442c_8scr-246218.jpg"
-      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-      alt="Replicate"
-    />
-  </label>
-  
-  <label class="">
-    <input type="checkbox"/>
-    <div
-      class="overlay"
-      onclick="this.parentNode.querySelector('input').checked=true"
-    >
-      <span
-        class="close-btn"
-        onclick="this.parentNode.querySelector('input').checked=false"
-        >&times;
-      </span>
-      <img
-        loading="lazy"
-        class="rounded-lg shadow-lg object-cover img-hover"
-        src="https://byrutgame.org/uploads/posts/2025-11/6cded1175a_9scr-430647.jpg"
-        onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-        alt="Replicate"
-      />
-    </div>
-    <img
-      loading="lazy"
-      class="rounded-lg shadow-lg object-cover cursor-pointer img-hover"
-      src="https://byrutgame.org/uploads/posts/2025-11/6cded1175a_9scr-430647.jpg"
-      onerror="this.onerror=null; this.src='/images/not-found-image.svg';"
-      alt="Replicate"
-    />
-  </label>
-  </div>
-
-<h3 id="game-videos">Game Videos<a hidden class="anchor" aria-hidden="true" href="#game-videos">#</a></h3>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"><div class="video-card">
-    <video
-      class="w-full rounded"
-      preload="metadata"
-      controls
-      loop
-      playsinline
-    >
-      <source src="https://cdn.akamai.steamstatic.com/steam/apps/257116754/movie_max.mp4" />
-    </video>
-  </div></div>
-
-
-
-
-
-
-
-<section class="mb-12">
-  <h3 class="text-2xl font-bold mb-6">More Game</h3>
-  <div class="flex space-x-4 overflow-x-auto cast-scroll pb-4">
-  
-    <a href="https://game-vibe.github.io/posts/total-war-warhammer-3/" aria-label="Total War: WARHAMMER 3" class="entry-link">
-        <div class="flex-none w-32">
-          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-              <img alt="Total War: WARHAMMER 3" class="w-full h-full object-cover" loading="lazy" src="/images/total-war-warhammer-3.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
-          </div>
-          <p class="text-sm line-clamp-1">Total War: WARHAMMER 3</p>
-          <p class="text-muted-foreground text-xs"> 2022/02/17</p>
-        </div>
-      </a>
-  
-    <a href="https://game-vibe.github.io/posts/void-crew/" aria-label="Void Crew" class="entry-link">
-        <div class="flex-none w-32">
-          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-              <img alt="Void Crew" class="w-full h-full object-cover" loading="lazy" src="/images/void-crew.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
-          </div>
-          <p class="text-sm line-clamp-1">Void Crew</p>
-          <p class="text-muted-foreground text-xs"> 2024/11/25</p>
-        </div>
-      </a>
-  
-    <a href="https://game-vibe.github.io/posts/shadow-bounded/" aria-label="Shadow Bounded" class="entry-link">
-        <div class="flex-none w-32">
-          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-              <img alt="Shadow Bounded" class="w-full h-full object-cover" loading="lazy" src="/images/shadow-bounded.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
-          </div>
-          <p class="text-sm line-clamp-1">Shadow Bounded</p>
-          <p class="text-muted-foreground text-xs"> 2024/09/09</p>
-        </div>
-      </a>
-  
-    <a href="https://game-vibe.github.io/posts/dice-dice-baby/" aria-label="Dice Dice Baby" class="entry-link">
-        <div class="flex-none w-32">
-          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-              <img alt="Dice Dice Baby" class="w-full h-full object-cover" loading="lazy" src="/images/dice-dice-baby.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
-          </div>
-          <p class="text-sm line-clamp-1">Dice Dice Baby</p>
-          <p class="text-muted-foreground text-xs"> 2025/11/05</p>
-        </div>
-      </a>
-  
-    <a href="https://game-vibe.github.io/posts/undertale/" aria-label="Undertale" class="entry-link">
-        <div class="flex-none w-32">
-          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-              <img alt="Undertale" class="w-full h-full object-cover" loading="lazy" src="/images/undertale.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
-          </div>
-          <p class="text-sm line-clamp-1">Undertale</p>
-          <p class="text-muted-foreground text-xs"> 2015/09/15</p>
-        </div>
-      </a>
-  
-    <a href="https://game-vibe.github.io/posts/mother-machine/" aria-label="Mother Machine" class="entry-link">
-        <div class="flex-none w-32">
-          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-              <img alt="Mother Machine" class="w-full h-full object-cover" loading="lazy" src="/images/mother-machine.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
-          </div>
-          <p class="text-sm line-clamp-1">Mother Machine</p>
-          <p class="text-muted-foreground text-xs"> 2025/03/26</p>
-        </div>
-      </a>
-  
-    <a href="https://game-vibe.github.io/posts/turbo-dismount-2/" aria-label="Turbo Dismount 2" class="entry-link">
-        <div class="flex-none w-32">
-          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-              <img alt="Turbo Dismount 2" class="w-full h-full object-cover" loading="lazy" src="/images/turbo-dismount-2.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
-          </div>
-          <p class="text-sm line-clamp-1">Turbo Dismount 2</p>
-          <p class="text-muted-foreground text-xs"> 2025/01/23</p>
-        </div>
-      </a>
-  
-    <a href="https://game-vibe.github.io/posts/plants-vs-zombies-replanted/" aria-label="Plants vs. Zombies: Replanted" class="entry-link">
-        <div class="flex-none w-32">
-          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-              <img alt="Plants vs. Zombies: Replanted" class="w-full h-full object-cover" loading="lazy" src="/images/plants-vs-zombies-replanted.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
-          </div>
-          <p class="text-sm line-clamp-1">Plants vs. Zombies: Replanted</p>
-          <p class="text-muted-foreground text-xs"> 2025/10/23</p>
-        </div>
-      </a>
-  
-    <a href="https://game-vibe.github.io/posts/kerbal-space-program/" aria-label="Kerbal Space Program" class="entry-link">
-        <div class="flex-none w-32">
-          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-              <img alt="Kerbal Space Program" class="w-full h-full object-cover" loading="lazy" src="/images/kerbal-space-program.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
-          </div>
-          <p class="text-sm line-clamp-1">Kerbal Space Program</p>
-          <p class="text-muted-foreground text-xs"> 2015/04/28</p>
-        </div>
-      </a>
-  
-    <a href="https://game-vibe.github.io/posts/dont-stare/" aria-label="Don&#39;t Stare" class="entry-link">
-        <div class="flex-none w-32">
-          <div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
-              <img alt="Don&#39;t Stare" class="w-full h-full object-cover" loading="lazy" src="/images/dont-stare.jpg" onerror="this.onerror=null; this.src='/images/not-found-image.svg';" />
-          </div>
-          <p class="text-sm line-clamp-1">Don&#39;t Stare</p>
-          <p class="text-muted-foreground text-xs"> 2024/09/04</p>
-        </div>
-      </a>
-  
-  </div>
+<label>
+<input type=checkbox>
+<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
+<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
+</span>
+<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-11/824b63d658_1scr-211074.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</div>
+<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-11/824b63d658_1scr-211074.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</label>
+<label>
+<input type=checkbox>
+<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
+<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
+</span>
+<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-11/4632cbacc3_2scr-649816.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</div>
+<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-11/4632cbacc3_2scr-649816.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</label>
+<label>
+<input type=checkbox>
+<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
+<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
+</span>
+<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-11/07ad3c3a5e_3scr-485697.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</div>
+<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-11/07ad3c3a5e_3scr-485697.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</label>
+<label>
+<input type=checkbox>
+<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
+<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
+</span>
+<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-11/572384226b_4scr-333320.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</div>
+<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-11/572384226b_4scr-333320.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</label>
+<label>
+<input type=checkbox>
+<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
+<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
+</span>
+<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-11/0486eda5ae_5scr-481628.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</div>
+<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-11/0486eda5ae_5scr-481628.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</label>
+<label>
+<input type=checkbox>
+<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
+<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
+</span>
+<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-11/00d101ef73_6scr-268531.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</div>
+<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-11/00d101ef73_6scr-268531.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</label>
+<label>
+<input type=checkbox>
+<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
+<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
+</span>
+<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-11/de15e2d50c_7scr-599665.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</div>
+<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-11/de15e2d50c_7scr-599665.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</label>
+<label>
+<input type=checkbox>
+<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
+<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
+</span>
+<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-11/23e1dd442c_8scr-246218.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</div>
+<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-11/23e1dd442c_8scr-246218.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</label>
+<label>
+<input type=checkbox>
+<div class=overlay onclick="this.parentNode.querySelector('input').checked=!0">
+<span class=close-btn onclick="this.parentNode.querySelector('input').checked=!1">&#215;
+</span>
+<img loading=lazy class="rounded-lg shadow-lg object-cover img-hover" src=https://byrutgame.org/uploads/posts/2025-11/6cded1175a_9scr-430647.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</div>
+<img loading=lazy class="rounded-lg shadow-lg object-cover cursor-pointer img-hover" src=https://byrutgame.org/uploads/posts/2025-11/6cded1175a_9scr-430647.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'" alt=Replicate>
+</label>
+</div>
+<h3 id=game-videos>Game Videos<a hidden class=anchor aria-hidden=true href=#game-videos>#</a></h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"><div class=video-card>
+<video class="w-full rounded" preload=metadata controls loop playsinline>
+<source src=https://cdn.akamai.steamstatic.com/steam/apps/257116754/movie_max.mp4>
+</video>
+</div></div>
+<section class=mb-12>
+<h3 class="text-2xl font-bold mb-6">More Game</h3>
+<div class="flex space-x-4 overflow-x-auto cast-scroll pb-4">
+<a href=https://game-vibe.github.io/posts/garrys-mod/ aria-label="Garry's Mod" class=entry-link>
+<div class="flex-none w-32">
+<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+<img alt="Garry's Mod" class="w-full h-full object-cover" loading=lazy src=/images/garrys-mod.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
+</div>
+<p class="text-sm line-clamp-1">Garry's Mod</p>
+<p class="text-muted-foreground text-xs"> 2006/11/29</p>
+</div>
+</a>
+<a href=https://game-vibe.github.io/posts/blood-typers/ aria-label="Blood Typers" class=entry-link>
+<div class="flex-none w-32">
+<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+<img alt="Blood Typers" class="w-full h-full object-cover" loading=lazy src=/images/blood-typers.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
+</div>
+<p class="text-sm line-clamp-1">Blood Typers</p>
+<p class="text-muted-foreground text-xs"> 2025/02/20</p>
+</div>
+</a>
+<a href=https://game-vibe.github.io/posts/dead-take/ aria-label="Dead Take" class=entry-link>
+<div class="flex-none w-32">
+<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+<img alt="Dead Take" class="w-full h-full object-cover" loading=lazy src=/images/dead-take.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
+</div>
+<p class="text-sm line-clamp-1">Dead Take</p>
+<p class="text-muted-foreground text-xs"> 2025/07/31</p>
+</div>
+</a>
+<a href=https://game-vibe.github.io/posts/terror-of-the-seven-seas/ aria-label="Terror of the Seven Seas" class=entry-link>
+<div class="flex-none w-32">
+<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+<img alt="Terror of the Seven Seas" class="w-full h-full object-cover" loading=lazy src=/images/terror-of-the-seven-seas.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
+</div>
+<p class="text-sm line-clamp-1">Terror of the Seven Seas</p>
+<p class="text-muted-foreground text-xs"> 2024/11/06</p>
+</div>
+</a>
+<a href=https://game-vibe.github.io/posts/drill-core/ aria-label="Drill Core" class=entry-link>
+<div class="flex-none w-32">
+<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+<img alt="Drill Core" class="w-full h-full object-cover" loading=lazy src=/images/drill-core.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
+</div>
+<p class="text-sm line-clamp-1">Drill Core</p>
+<p class="text-muted-foreground text-xs"> 2024/09/12</p>
+</div>
+</a>
+<a href=https://game-vibe.github.io/posts/machinika-museum/ aria-label="Machinika Museum" class=entry-link>
+<div class="flex-none w-32">
+<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+<img alt="Machinika Museum" class="w-full h-full object-cover" loading=lazy src=/images/machinika-museum.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
+</div>
+<p class="text-sm line-clamp-1">Machinika Museum</p>
+<p class="text-muted-foreground text-xs"> 2021/03/23</p>
+</div>
+</a>
+<a href=https://game-vibe.github.io/posts/behind-the-horizon/ aria-label="Behind the Horizon" class=entry-link>
+<div class="flex-none w-32">
+<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+<img alt="Behind the Horizon" class="w-full h-full object-cover" loading=lazy src=/images/behind-the-horizon.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
+</div>
+<p class="text-sm line-clamp-1">Behind the Horizon</p>
+<p class="text-muted-foreground text-xs"> 2020/11/10</p>
+</div>
+</a>
+<a href=https://game-vibe.github.io/posts/yume-kakigori/ aria-label="Yume Kakigori" class=entry-link>
+<div class="flex-none w-32">
+<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+<img alt="Yume Kakigori" class="w-full h-full object-cover" loading=lazy src=/images/yume-kakigori.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
+</div>
+<p class="text-sm line-clamp-1">Yume Kakigori</p>
+<p class="text-muted-foreground text-xs"> 2025/07/25</p>
+</div>
+</a>
+<a href=https://game-vibe.github.io/posts/outlast-whistleblower/ aria-label="Outlast (+Whistleblower)" class=entry-link>
+<div class="flex-none w-32">
+<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+<img alt="Outlast (+Whistleblower)" class="w-full h-full object-cover" loading=lazy src=/images/outlast-whistleblower.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
+</div>
+<p class="text-sm line-clamp-1">Outlast (+Whistleblower)</p>
+<p class="text-muted-foreground text-xs"> 2013/09/04</p>
+</div>
+</a>
+<a href=https://game-vibe.github.io/posts/refate-echoes-of-desire/ aria-label="Refate: Echoes of Desire" class=entry-link>
+<div class="flex-none w-32">
+<div class="aspect-square bg-muted rounded-lg mb-2 overflow-hidden">
+<img alt="Refate: Echoes of Desire" class="w-full h-full object-cover" loading=lazy src=/images/refate-echoes-of-desire.jpg onerror="this.onerror=null,this.src='/images/not-found-image.svg'">
+</div>
+<p class="text-sm line-clamp-1">Refate: Echoes of Desire</p>
+<p class="text-muted-foreground text-xs"> 2025/10/22</p>
+</div>
+</a>
+</div>
 </section>
-          </div>
-        </div>
-        <div class="mb-6" style="margin-top:0.5em;text-align: center;">
-          
-          <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-4988552421895566"
-            data-ad-slot="4415536934"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        
-        </div>
-        <div><script src="https://giscus.app/client.js"
-        data-repo="seiri-blog/seiri-blog.github.io"
-        data-repo-id="R_kgDOJGyRgA"
-        data-category="General"
-        data-category-id="DIC_kwDOJGyRgM4CgDQM"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="dark_dimmed"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
-        </div>
-    </div>
-</main><a class="facebook" target="_blank" rel="noopener noreferrer" aria-label="share Replicate on facebook" href='https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fgame-vibe.github.io%2fposts%2freplicat%2f' title='Facebook Share'>
-    <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="20px" width="20px" fill="currentColor">
-         <path  d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
-    </svg>
+</div>
+</div>
+<div class=mb-6 style=margin-top:.5em;text-align:center>
+<ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4988552421895566 data-ad-slot=4415536934 data-ad-format=auto data-full-width-responsive=true></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</div>
+<div><script src=https://giscus.app/client.js data-repo=seiri-blog/seiri-blog.github.io data-repo-id=R_kgDOJGyRgA data-category=General data-category-id=DIC_kwDOJGyRgM4CgDQM data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=bottom data-theme=dark_dimmed data-lang=en crossorigin=anonymous async></script>
+</div>
+</div>
+</main><a class=facebook target=_blank rel="noopener noreferrer" aria-label="share Replicate on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fgame-vibe.github.io%2fposts%2freplicat%2f" title="Facebook Share"><svg viewBox="0 0 512 512" height="20" width="20" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg>
 </a>
-<a class="twitter" target='_blank' rel="noopener noreferrer" aria-label="share Replicate on twitter" href='https://twitter.com/intent/tweet/?text=Replicate&amp;url=https%3a%2f%2fgame-vibe.github.io%2fposts%2freplicat%2f&amp;hashtags=Indie%2cStrategy' title='Twitter(X) Share'>
-    <svg version="1.1" id="svg5" xmlns:svg="http://www.w3.org/2000/svg"
-        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="30px" width="30px" viewBox="0 0 1700 1100">
-        <g id="layer1" transform="translate(52.390088,-25.058597)">
-        <path id="path1009" fill="#fff" d="M283.94,167.31l386.39,516.64L281.5,1104h87.51l340.42-367.76L984.48,1104h297.8L874.15,558.3l361.92-390.99 h-87.51l-313.51,338.7l-253.31-338.7H283.94z M412.63,231.77h136.81l604.13,807.76h-136.81L412.63,231.77z"/>
-        </g>
-    </svg>
+<a class=twitter target=_blank rel="noopener noreferrer" aria-label="share Replicate on twitter" href="https://twitter.com/intent/tweet/?text=Replicate&url=https%3a%2f%2fgame-vibe.github.io%2fposts%2freplicat%2f&hashtags=Indie%2cStrategy" title="Twitter(X) Share"><svg id="svg5" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="30" width="30" viewBox="0 0 1700 1100"><g id="layer1" transform="translate(52.390088,-25.058597)"><path id="path1009" fill="#fff" d="M283.94 167.31l386.39 516.64L281.5 1104h87.51l340.42-367.76L984.48 1104h297.8L874.15 558.3l361.92-390.99h-87.51l-313.51 338.7-253.31-338.7H283.94zm128.69 64.46h136.81l604.13 807.76h-136.81L412.63 231.77z"/></g></svg>
 </a>
-    
 <footer class="bg-gray-900 border-t border-gray-800 py-8">
-    <div class="container mx-auto px-6 text-gray-200 text-center">
-        <p>&copy; 2026 Game Vibe. <br/> 
-        <p>All rights reserved.</p></p>
-    </div>
+<div class="container mx-auto px-6 text-gray-200 text-center">
+<p>&copy; 2026 Game Vibe. <br>
+<p>All rights reserved.</p></p>
+</div>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top" class="top-link" id="top-link">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+<a href=#top aria-label="go to top" title="Go to Top" class=top-link id=top-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a>
-
-<script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-</script>
-<script>
-    const gotop = document.querySelector("#top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-            gotop.style.visibility = "visible";
-            gotop.style.opacity = "1";
-        } else {
-            gotop.style.visibility = "hidden";
-            gotop.style.opacity = "0";
-        }
-    };
-</script></body>
-
+<script>document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>const gotop=document.querySelector("#top-link");window.onscroll=function(){document.body.scrollTop>400||document.documentElement.scrollTop>400?(gotop.style.visibility="visible",gotop.style.opacity="1"):(gotop.style.visibility="hidden",gotop.style.opacity="0")}</script></body>
 </html>
